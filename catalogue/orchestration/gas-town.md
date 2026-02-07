@@ -20,6 +20,18 @@ Gas Town runs as a Go binary that manages a fleet of tmux sessions, each running
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 1 | 0.10 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.20** |
+
 ### Strengths
 - Created by Steve Yegge, the author of Beads — validates our choice of Beads as the task tracking layer and ensures tight integration
 - Mature orchestration architecture with 7 specialized roles covering the full development lifecycle (code, review, test, docs, security)

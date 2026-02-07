@@ -58,6 +58,18 @@ claude-squad
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 5 | 1.50 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **4.75** |
+
 ### Strengths
 - Clean TUI interface — works in any terminal, including SSH sessions and tmux
 - Git worktree management is automatic and reliable

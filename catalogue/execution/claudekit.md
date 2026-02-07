@@ -25,6 +25,18 @@ CLI toolkit providing smart guardrails for Claude Code development. Key features
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.75** |
+
 **Strengths:**
 - Checkpointing is directly useful for Ralph loops -- rollback on bad iterations
 - Error prevention hooks are practical and immediately valuable

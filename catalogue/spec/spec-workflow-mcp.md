@@ -20,6 +20,18 @@ Functions as a Model Context Protocol server that integrates with Claude Code, A
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.00** |
+
 ### Strengths
 - Real-time web dashboard — visual progress monitoring that OpenSpec lacks
 - MCP-based — clean integration without tool-specific plugins

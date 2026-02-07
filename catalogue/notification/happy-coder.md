@@ -43,6 +43,18 @@ The system has three components:
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.95** |
+
 ### Strengths
 - Solves the "agent is blocked waiting for my input" problem directly from mobile
 - E2E encryption is a strong security stance -- important when code involves client secrets

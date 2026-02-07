@@ -44,6 +44,18 @@ This is the core differentiator -- the system gets smarter over time rather than
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.40** |
+
 ### Strengths
 - The "compounding" philosophy directly addresses the biggest weakness of AI agents: they forget everything between sessions
 - Four-phase cycle is simple enough to understand but rigorous enough to enforce quality

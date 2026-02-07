@@ -82,6 +82,18 @@ done
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 5 | 0.50 |
+| **Composite** | | | **4.55** |
+
 ### Strengths
 - Universal — works on any Unix system, nothing to install
 - Battle-tested — tmux has been stable for decades

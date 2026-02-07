@@ -55,6 +55,18 @@ open http://localhost:3000
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 1 | 0.20 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.35** |
+
 ### Strengths
 - Production-grade monitoring stack — Prometheus + Grafana is the industry standard for infrastructure observability
 - Real-time dashboards with 30-second refresh provide immediate visibility into running sessions

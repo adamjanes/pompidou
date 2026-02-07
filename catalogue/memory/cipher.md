@@ -52,6 +52,18 @@ Cipher is an open-source memory layer specifically designed for AI coding agents
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.70** |
+
 ### Strengths
 - Cross-tool compatible — the only memory solution that works across Claude Code, Cursor, Codex, Cline, and others via MCP
 - MCP-based architecture is clean and standards-compliant — no tool-specific hooks or plugins needed

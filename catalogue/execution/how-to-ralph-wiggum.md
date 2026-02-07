@@ -59,6 +59,18 @@ while :; do cat PROMPT.md | claude --dangerously-skip-permissions; done
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 5 | 1.50 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 5 | 0.50 |
+| **Composite** | | | **4.55** |
+
 ### Strengths
 - Authoritative — written by the creator of the Ralph concept (Geoffrey Huntley)
 - Battle-tested across the entire Ralph ecosystem — every tool implements some version of this

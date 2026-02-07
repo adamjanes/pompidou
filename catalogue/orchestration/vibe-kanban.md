@@ -20,6 +20,18 @@ Vibe Kanban runs as a local web application (TypeScript frontend, Rust backend f
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.90** |
+
 ### Strengths
 - Multi-agent support — not locked into Claude Code alone, can orchestrate Codex, Gemini CLI, and Amp alongside
 - Visual kanban dashboard provides the oversight layer missing from terminal-only tools

@@ -36,6 +36,18 @@ Advanced Context Engineering (ACE) is a methodology document — not a tool — 
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.70** |
+
 ### Strengths
 - Backed by real results (35k LOC features in 7 hours, passing expert review)
 - Framework-agnostic — applies to any Ralph loop, any agent tool, any LLM

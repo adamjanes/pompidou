@@ -45,6 +45,18 @@ ralph-tui remote add <alias> <host>     # Add remote instance
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.70** |
+
 ### Strengths
 - 1,700 stars and 1,163 commits — well-maintained, actively developed
 - TUI provides real-time visibility into agent execution (subagent tracing is unique)

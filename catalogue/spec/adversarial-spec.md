@@ -27,6 +27,18 @@ Supports 7+ providers via litellm (OpenAI, Anthropic, Google, xAI, Mistral, Groq
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 1 | 0.10 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **1.90** |
+
 ### Strengths
 - Novel multi-LLM debate approach — catches gaps any single model would miss
 - Claude actively participates (not just orchestrating) — challenges opponent findings

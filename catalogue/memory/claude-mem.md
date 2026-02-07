@@ -20,6 +20,18 @@ claude-mem hooks into 5 Claude Code lifecycle events: session start, session end
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **2.90** |
+
 ### Strengths
 - Solves the #1 community pain point — no cross-session memory in Claude Code
 - Massive adoption: 24,300 stars in days, #1 trending on GitHub

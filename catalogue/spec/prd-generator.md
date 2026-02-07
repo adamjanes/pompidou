@@ -66,6 +66,18 @@ Clone into the project directory and reference in the project's `.claude/` confi
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 1 | 0.15 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **2.70** |
+
 ### Strengths
 
 - **Dead simple** — One command, one output. No learning curve, no configuration, no workflow to internalize.

@@ -52,6 +52,18 @@ The system also includes a `ralph-enable` wizard for bootstrapping existing proj
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.70** |
+
 ### Strengths
 - Circuit breaker pattern is a genuinely good idea — prevents the #1 problem with naive Ralph loops (infinite spinning)
 - Dual-condition exit gate reduces both false positives and false negatives

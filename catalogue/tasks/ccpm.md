@@ -38,6 +38,18 @@ CCPM treats GitHub Issues as the single source of truth. Local files serve as th
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.40** |
+
 ### Strengths
 - GitHub Issues as backbone means zero new infrastructure — teams already have it
 - Git worktrees for parallel isolation is a solid architectural choice

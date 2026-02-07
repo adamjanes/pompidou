@@ -76,6 +76,18 @@ You are a [role description].
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 5 | 0.50 |
+| **Composite** | | | **4.60** |
+
 ### Strengths
 - Always available — no flags, no installation, no configuration needed
 - Lower cost than Agent Teams (summarized results, not full context duplication)

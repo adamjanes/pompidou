@@ -50,6 +50,18 @@ worktrunk rm feature-auth
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.95** |
+
 ### Strengths
 - Purpose-built for the AI agent parallel workflow pattern — not a general-purpose worktree manager retrofitted for agents
 - Active development (Feb 2026 commits) — the author is clearly responding to the AI coding tool ecosystem

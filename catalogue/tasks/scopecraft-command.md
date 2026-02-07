@@ -26,6 +26,18 @@ CLI and MCP server for Markdown-Driven Task Management (MDTM). Tasks are markdow
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.80** |
+
 **Strengths:**
 - Markdown-native -- tasks are human-readable files in the repo
 - Dual CLI + MCP interface gives flexibility

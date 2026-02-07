@@ -48,6 +48,18 @@ The process is linear and sequential: constitution --> specify --> plan --> task
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 5 | 0.50 |
+| **Composite** | | | **3.20** |
+
 ### Strengths
 
 - **Industry standard** — 68k+ stars, GitHub/Microsoft backing, massive community. If spec-driven development has a default choice, this is it.

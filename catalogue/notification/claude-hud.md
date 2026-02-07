@@ -20,6 +20,18 @@ Leverages Claude Code's stdin JSON → statusline API. Parses transcript JSONL f
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.00** |
+
 ### Strengths
 - Real-time context usage visualization — critical for knowing when you're approaching limits
 - Native statusline integration — no extra windows or processes

@@ -41,6 +41,18 @@ export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **4.00** |
+
 ### Strengths
 - Native to Claude Code — no plugins, no MCP servers, no dependency management
 - Reliable and well-tested by Anthropic

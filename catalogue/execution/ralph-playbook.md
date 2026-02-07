@@ -25,6 +25,18 @@ The playbook emphasizes that the quality of Phase 1 and 2 (requirements + planni
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.75** |
+
 ### Strengths
 - Best-written Ralph documentation available — clear, practical, actionable
 - The 3-phase mental model prevents the "just loop and hope" anti-pattern

@@ -38,6 +38,18 @@ The PR + CI gate pattern means no code ships without passing your existing quali
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.30** |
+
 ### Strengths
 - Full CI/CD integration — the only autonomous execution tool that explicitly waits for CI checks before merging
 - PR-based workflow provides natural safety boundaries — all changes are reviewable before merge

@@ -38,6 +38,18 @@ export ANTHROPIC_API_KEY="your-key"
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 1 | 0.30 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 1 | 0.15 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **1.80** |
+
 ### Strengths
 - Zero false positives by design — only reports what it can prove with a working exploit
 - White-box + black-box combined gives deeper coverage than either approach alone

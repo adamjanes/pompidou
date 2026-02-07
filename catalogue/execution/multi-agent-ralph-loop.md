@@ -44,6 +44,18 @@ Multi-Agent Ralph Loop is an AI orchestration framework that coordinates multipl
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 1 | 0.20 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 1 | 0.15 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.25** |
+
 ### Strengths
 - Most comprehensive feature set of any Ralph implementation (orchestration + learning + security + swarm)
 - 100% test coverage (354/354 tests, 83/83 hooks validated) — unusually rigorous

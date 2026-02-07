@@ -20,6 +20,18 @@ Integrates as a PreToolUse hook for Bash commands. Before any shell command exec
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.55** |
+
 ### Strengths
 - Catches dangerous commands before execution — last line of defense
 - Rust performance means negligible latency

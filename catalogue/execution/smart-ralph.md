@@ -42,6 +42,18 @@ Smart Ralph is a Claude Code plugin that bridges the gap between vague feature r
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.15** |
+
 ### Strengths
 - Bridges the spec-to-execution gap that most Ralph tools ignore
 - Codebase indexing makes existing patterns discoverable — critical for brownfield work

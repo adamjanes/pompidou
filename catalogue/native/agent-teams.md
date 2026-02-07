@@ -48,6 +48,18 @@ Each teammate loads full context (~1M tokens), so a team of 5 uses ~5-7x the tok
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.85** |
+
 ### Strengths
 - Native to Claude Code — zero installation, zero dependencies, zero configuration beyond the env var
 - Reliable — tested and maintained by Anthropic, not a community plugin

@@ -27,6 +27,18 @@ Converts documentation websites, GitHub repositories, and PDF files into Claude 
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.70** |
+
 **Strengths:**
 - Solves a real problem: turning client/library docs into usable AI context
 - AST parsing is more reliable than text scraping alone

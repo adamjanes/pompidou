@@ -25,6 +25,18 @@ Collection of 27 commands, 9 skills, and 3 agents for Claude Code workflows. Cov
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.90** |
+
 **Strengths:**
 - Practical, real-workflow-tested commands and skills
 - Thinking framework commands (`/consider:*`) are a clever UX pattern

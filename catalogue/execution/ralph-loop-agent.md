@@ -47,6 +47,18 @@ const result = await loop({
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **2.75** |
+
 ### Strengths
 - Vercel authorship provides credibility and likely long-term maintenance
 - Programmatic verification callbacks enable custom completion logic beyond test passing

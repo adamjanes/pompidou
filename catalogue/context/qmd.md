@@ -20,6 +20,18 @@ QMD indexes a directory of markdown files using three search strategies simultan
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.15** |
+
 ### Strengths
 - Dramatically faster markdown search (~0.4 seconds vs 5+ seconds with naive approaches)
 - Triple hybrid search (BM25 + vectors + LLM re-ranking) is state-of-the-art for local retrieval

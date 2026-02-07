@@ -30,6 +30,18 @@ Security: 3-layer sandbox (OS sandbox, filesystem restrictions, dynamic command 
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.15** |
+
 ### Strengths
 - **All-in-one** — collapses tasks + execution + process management + QA into a single tool
 - **Visual** — Kanban board gives real-time agent progress. Click into any task to see live terminal feed.

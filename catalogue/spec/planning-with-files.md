@@ -27,6 +27,18 @@ Commands: `/plan` (create/update plan), `/planning` (start working from plan).
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.45** |
+
 ### Strengths
 - High adoption (13.2K stars, MIT license) — well-validated approach
 - 14-platform support — not locked to Claude Code

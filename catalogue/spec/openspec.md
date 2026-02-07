@@ -55,6 +55,18 @@ OpenSpec is a lightweight spec-driven development (SDD) framework for AI coding 
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 5 | 1.50 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **4.75** |
+
 ### Strengths
 
 - **Lightweight** — ~250 lines of core code. Zero bloat, zero learning curve. The entire framework is simple enough to understand in one sitting.

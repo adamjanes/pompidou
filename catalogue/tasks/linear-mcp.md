@@ -46,6 +46,18 @@ The most notable implementation is [Cyrus](https://github.com/ceedaragents/cyrus
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.90** |
+
 ### Strengths
 - Official, hosted MCP server — no infrastructure to maintain
 - Linear is a best-in-class issue tracker with excellent UX for humans

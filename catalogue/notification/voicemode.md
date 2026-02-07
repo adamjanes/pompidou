@@ -26,6 +26,18 @@ Voice conversations with Claude Code via speech-to-text and text-to-speech. Supp
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.65** |
+
 **Strengths:**
 - Operator mode could enable voice-based unblocking of Ralph loops
 - Local STT/TTS means no cloud dependency for basic voice

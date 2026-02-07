@@ -52,6 +52,18 @@ ccusage is a CLI tool that analyzes Claude Code token usage and costs from local
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 5 | 0.50 |
+| **Composite** | | | **4.10** |
+
 ### Strengths
 - Zero-config: reads local JSONL files directly, no API keys or setup needed
 - Ultra-compact bundle size, minimal installation footprint

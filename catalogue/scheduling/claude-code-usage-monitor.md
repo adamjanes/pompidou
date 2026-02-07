@@ -27,6 +27,18 @@ Real-time terminal monitor for Claude Code token usage with ML-based predictions
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **2.90** |
+
 **Strengths:**
 - Solves a real pain point -- knowing when limits will hit before they do
 - Clean modular architecture (v3.0 rewrite, Pydantic config, 100+ tests)

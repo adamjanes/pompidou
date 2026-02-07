@@ -70,6 +70,18 @@ brew install ralph-orchestrator      # Homebrew
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.95** |
+
 ### Strengths
 - Multi-backend support (7 backends) provides vendor flexibility
 - Hat System is an elegant abstraction for agent specialization

@@ -42,6 +42,18 @@ npx claude-flow memory query  # Query persistent memory
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 1 | 0.15 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **1.75** |
+
 ### Strengths
 - Impressive vision — addresses real gaps in multi-agent coordination
 - Large community (13,700 stars, ~100K monthly users)

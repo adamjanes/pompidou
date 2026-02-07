@@ -49,6 +49,18 @@ All agents use identical configuration -- just add `container-use stdio` as an M
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.80** |
+
 ### Strengths
 - True isolation solves the multi-agent conflict problem -- agents cannot step on each other's work
 - Backed by Dagger (Solomon Hykes, Docker co-founder) -- serious engineering, not a hobby project

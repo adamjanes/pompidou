@@ -48,6 +48,18 @@ Flags:     --dangerously-skip-permissions
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 5 | 1.50 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **4.05** |
+
 ### Strengths
 - Native macOS experience — feels like a real app, not a hack
 - Visual scheduling is much easier than editing launchd plists manually

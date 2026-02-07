@@ -20,6 +20,18 @@ Context7 runs as an MCP server (either via the official plugin or standalone via
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **4.05** |
+
 ### Strengths
 - Most-installed community plugin with 71,800+ installs — proven at scale
 - Backed by Upstash, a well-funded infrastructure company with a track record of maintaining open source

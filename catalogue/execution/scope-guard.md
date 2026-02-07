@@ -20,6 +20,18 @@ Integrates as a Claude Code hook (PostToolUse). After each file edit, Scope Guar
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **3.05** |
+
 ### Strengths
 - Addresses a real problem — agents frequently edit unrelated files during autonomous execution
 - Git-based detection is reliable and fast

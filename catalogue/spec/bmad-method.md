@@ -66,6 +66,18 @@ Plus 13 more specialized agents covering security, data, documentation, etc.
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.95** |
+
 ### Strengths
 
 - **Comprehensive planning** — No other SDD tool comes close to the depth of planning. The 21-agent, 50+ workflow system covers every aspect of software development from stakeholder analysis to deployment.

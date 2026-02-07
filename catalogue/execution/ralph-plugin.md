@@ -46,6 +46,18 @@ When Claude completes an iteration and exits, the stop hook intercepts, re-injec
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 5 | 0.50 |
+| **Composite** | | | **4.35** |
+
 ### Strengths
 - Anthropic-backed — maintained in the official claude-code repo
 - Simple and predictable — just a loop with a stop hook, no complex orchestration

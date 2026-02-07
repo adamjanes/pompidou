@@ -25,6 +25,18 @@ Project and task management framework for AI-assisted development. Uses structur
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.50** |
+
 **Strengths:**
 - Production-tested legacy system (used in real projects)
 - MCP server adds programmatic access for agents

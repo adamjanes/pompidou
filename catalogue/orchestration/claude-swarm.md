@@ -27,6 +27,18 @@ Ruby-based multi-agent orchestration framework. Agents with specialized roles co
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 1 | 0.15 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.70** |
+
 **Strengths:**
 - Single-process architecture is simpler than multi-process alternatives
 - Semantic memory via FAISS is genuinely useful for long-running agents

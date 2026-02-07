@@ -40,6 +40,18 @@ After a session, `/choo-choo-ralph:harvest` does something unique: it extracts l
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 5 | 1.50 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 1 | 0.15 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **3.40** |
+
 ### Strengths
 - Solves the full spec-to-tasks-to-execute-to-learn cycle in one tool
 - Built on Beads (our chosen task tracker) — not a competing format

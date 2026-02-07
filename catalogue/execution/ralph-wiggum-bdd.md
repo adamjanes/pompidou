@@ -39,6 +39,18 @@ ralph-wiggum-bdd.sh --interactive
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 1 | 0.15 |
+| Ecosystem fit | 15% | 1 | 0.15 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **2.50** |
+
 ### Strengths
 - BDD-native approach means requirements are executable from day one
 - Gherkin status tags provide simple, readable task tracking without JSON

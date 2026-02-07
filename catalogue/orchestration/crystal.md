@@ -35,6 +35,18 @@ Crystal is a desktop application for managing multiple parallel Claude Code sess
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.75** |
+
 ### Strengths
 - Excellent visual interface for managing parallel sessions
 - Git worktree management is automatic and clean

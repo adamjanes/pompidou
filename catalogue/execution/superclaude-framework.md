@@ -24,6 +24,18 @@ Meta-programming configuration framework that transforms Claude Code into a stru
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.25** |
+
 **Strengths:**
 - Massive command library covering full dev lifecycle
 - Large community (20.7k stars, 1.8k forks) means active maintenance

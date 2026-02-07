@@ -55,6 +55,18 @@ With `CLAUDE_CODE_TASK_LIST_ID` set, multiple Claude Code instances see the same
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.70** |
+
 ### Strengths
 - Native to Claude Code — no external tools or dependencies
 - DAG structure handles complex task dependencies correctly

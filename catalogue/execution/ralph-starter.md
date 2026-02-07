@@ -41,6 +41,18 @@ ralph-starter mcp          # Start as MCP server for Claude Desktop
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 1 | 0.15 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **2.15** |
+
 ### Strengths
 - Broadest integration set of any Ralph implementation (GitHub, Linear, Notion, Figma, URL, PDF)
 - Built-in cost tracking with per-model token estimates — rare and valuable

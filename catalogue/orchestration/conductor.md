@@ -20,6 +20,18 @@ Download the macOS app, point it at a repository, and it manages parallel Claude
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **2.90** |
+
 ### Strengths
 - Native macOS UX — polished, purpose-built desktop experience
 - Automatic worktree lifecycle management (create, work, cleanup)

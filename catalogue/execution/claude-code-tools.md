@@ -75,6 +75,18 @@ Resume mechanisms support switching between Claude Code and Codex-CLI:
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.45** |
+
 ### Strengths
 - Directly addresses the #1 problem with long-running Ralph loops: context loss during compaction
 - Lineage system is architecturally elegant -- nothing is permanently lost, agents can retrieve ancestor context on demand

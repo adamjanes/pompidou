@@ -78,6 +78,18 @@ claude-code-scheduler stop
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.60** |
+
 ### Strengths
 - Cross-platform — works anywhere Node.js runs (macOS, Linux, Windows)
 - JSON config is version-controllable and easily shared across machines

@@ -45,6 +45,18 @@ Rules (language-specific configs in `rules/common/` and stack-specific folders) 
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **3.20** |
+
 ### Strengths
 - Most comprehensive single plugin available -- agents, skills, commands, hooks, and MCP configs in one package
 - Battle-tested over 10+ months of daily production use

@@ -25,6 +25,18 @@ Framework that enforces production-grade development practices in Claude Code. "
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.35** |
+
 **Strengths:**
 - Endless Mode directly addresses session continuity -- our biggest Ralph loop pain point
 - TDD enforcement is genuinely useful for code quality

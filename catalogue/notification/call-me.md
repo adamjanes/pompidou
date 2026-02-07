@@ -20,6 +20,18 @@ Architecture: Claude Code → stdin JSON → local MCP Server → ngrok tunnel �
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.40** |
+
 ### Strengths
 - Most direct notification possible — impossible to miss a phone call
 - Multi-turn voice conversations (not just one-way alerts)

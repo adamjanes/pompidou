@@ -57,6 +57,18 @@ TDD enforcement can be toggled on/off mid-session without restarting. This is us
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 3 | 0.45 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **3.65** |
+
 ### Strengths
 - Hooks-based enforcement is the right architectural choice -- operates at the tool level, not prompt level
 - Multi-language support covers our full stack (TypeScript via Vitest, Python via pytest)

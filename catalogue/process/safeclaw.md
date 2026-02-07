@@ -20,6 +20,18 @@ Spins up Docker containers, each running a Claude Code instance with its own iso
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 2 | 0.40 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **2.30** |
+
 ### Strengths
 - Docker isolation makes autonomous execution safe
 - Web dashboard for monitoring multiple sessions

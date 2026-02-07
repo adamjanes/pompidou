@@ -45,6 +45,18 @@ ccmanager
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 2 | 0.30 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 4 | 0.40 |
+| Maturity | 10% | 2 | 0.20 |
+| **Composite** | | | **2.70** |
+
 ### Strengths
 - Multi-agent support (8 agents) — the only session manager that handles Claude Code, Gemini CLI, Codex CLI, and others in a unified interface
 - No tmux dependency — simpler setup, fewer moving parts, no tmux configuration headaches

@@ -20,6 +20,18 @@ Run `npx repomix` in any repository and it generates a single output file (defau
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 3 | 0.45 |
+| Cost efficiency | 10% | 2 | 0.20 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **3.05** |
+
 ### Strengths
 - Massive adoption (21,700 stars) — battle-tested across thousands of workflows
 - Simple concept that just works — one command, one output file

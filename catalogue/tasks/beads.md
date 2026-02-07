@@ -44,6 +44,18 @@ bd dep bd-a1b2 bd-c3d4     # Add dependency between beads
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 5 | 1.50 |
+| Simplicity | 20% | 5 | 1.00 |
+| Community trust | 15% | 4 | 0.60 |
+| Ecosystem fit | 15% | 5 | 0.75 |
+| Cost efficiency | 10% | 5 | 0.50 |
+| Maturity | 10% | 3 | 0.30 |
+| **Composite** | | | **4.65** |
+
 ### Strengths
 - Truly git-native: issues travel with the code, branch, merge, and diff like any other file
 - Hash-based IDs eliminate merge conflicts in multi-agent workflows

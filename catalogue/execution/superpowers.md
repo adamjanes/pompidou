@@ -40,6 +40,18 @@ Skills live in a `/skills` directory and auto-trigger based on development conte
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 4 | 1.20 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 4 | 0.60 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **3.85** |
+
 ### Strengths
 - Provides structured *methodology*, not just execution tooling -- the missing layer in most setups
 - TDD enforcement is baked in, not optional

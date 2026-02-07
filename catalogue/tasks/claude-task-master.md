@@ -42,6 +42,18 @@ research             # Fresh web research with project context
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 3 | 0.90 |
+| Simplicity | 20% | 3 | 0.60 |
+| Community trust | 15% | 5 | 0.75 |
+| Ecosystem fit | 15% | 2 | 0.30 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 4 | 0.40 |
+| **Composite** | | | **3.25** |
+
 ### Strengths
 - Massive adoption (25K+ stars) — largest community in the AI task management space
 - PRD-to-tasks pipeline is genuinely useful for greenfield projects

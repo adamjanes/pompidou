@@ -36,6 +36,18 @@ The tool is designed as a generic wrapper — the `--agent` flag accepts any CLI
 
 ## Evaluation
 
+### Scores
+
+| Criterion | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Holy Grail alignment | 30% | 2 | 0.60 |
+| Simplicity | 20% | 4 | 0.80 |
+| Community trust | 15% | 1 | 0.15 |
+| Ecosystem fit | 15% | 1 | 0.15 |
+| Cost efficiency | 10% | 3 | 0.30 |
+| Maturity | 10% | 1 | 0.10 |
+| **Composite** | | | **2.10** |
+
 ### Strengths
 - Python-native — useful for teams in Python ecosystems
 - Minimal and easy to understand (24 commits total)
