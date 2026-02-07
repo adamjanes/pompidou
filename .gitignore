@@ -1,0 +1,17 @@
+# Personal knowledge (briefings, calls, updates)
+knowledge/
+
+# Personal implementation plans
+plans/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Claude Code local settings
+.claude/
+.mcp.json
+
+# OS files
+.DS_Store
