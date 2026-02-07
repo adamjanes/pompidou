@@ -8,13 +8,18 @@ Named after the Pompidou Centre in Paris. This project is the **intelligence lay
 
 Build and maintain a system where AI agents work on Adam's projects autonomously. Adam is the product owner and architect. AI agents are the dev team. He sets direction, they execute. He reviews, unblocks, and steers — the system handles the grunt work around the clock.
 
-## The Holy Grail (5 bullets)
+## The Holy Grail (5 phases + platform)
 
-1. **Spec it** — OpenSpec (brownfield) or BMAD (greenfield) defines what to build, surfaces blockers upfront
-2. **Task it** — Beads (git-native) breaks specs into dependency-aware tasks across all projects
-3. **Run it** — Per-project Ralph loops (Oh-My-ClaudeCode + claude-auto-resume) execute autonomously, pause on limits, auto-resume
-4. **Flag it** — Ralph loops push blockers to a shared file; OpenClaw (isolated in Docker, Telegram-only) pings Adam when something's stuck
-5. **Repeat it** — runCLAUDErun schedules nightly kickoffs; Adam reviews results each morning, unblocks via Telegram, the system keeps going
+**Development phases:**
+1. **Spec It** — OpenSpec defines what to build, surfaces blockers upfront
+2. **Task It** — Beads breaks specs into dependency-aware tasks; /pour bridges specs to beads
+3. **Build It** — OMC Autopilot executes (32 agents, model routing, TDD, code review)
+4. **Verify It** — Full CI validation (test suite + lint + types + build) before merge; Adam eyeballs deployed version (V1)
+5. **Learn It** — /harvest captures session learnings into knowledge/updates/
+
+**Infrastructure platform** (keeps the cycle running):
+- Scheduling: runCLAUDErun | Process: Claude Squad | Resilience: claude-auto-resume
+- Notifications: OpenClaw [Docker] → Telegram | Safety: worktree isolation + command guard
 
 ## Directory Structure
 
@@ -44,7 +49,8 @@ pompidou/
 │   └── security/                # Security tools (1 entry)
 │
 ├── stack/                       # The output — recommended tech stack
-│   ├── current.md               # Holy Grail phase → tool mapping
+│   ├── how-it-works.md          # ★ START HERE — full system narrative
+│   ├── current.md               # Quick-reference tables (tool → phase)
 │   ├── decisions.md             # Decision log with dates & rationale
 │   └── roadmap.md               # What to evaluate next
 │
@@ -61,8 +67,9 @@ pompidou/
 
 | What | Where |
 |------|-------|
+| **Understand the system** | `stack/how-it-works.md` ★ Start here |
 | **Find a tool** | `catalogue/_index.md` |
-| **Current stack** | `stack/current.md` |
+| **Current stack (tables)** | `stack/current.md` |
 | **Why we chose X** | `stack/decisions.md` |
 | **What to evaluate next** | `stack/roadmap.md` |
 | **Run a research sweep** | Feed `research/SWEEP.md` to a Claude session |
@@ -79,14 +86,19 @@ pompidou/
 
 ## Implementation Status
 
-| Phase | Status | Key Tool |
-|-------|--------|----------|
-| Phase 1: Foundation | ✅ Complete | Bootstrap script, shared agents |
-| Phase 2: Spec-Driven Dev | Decisions made | OpenSpec CLI installed. Not yet initialized on any project. |
-| Phase 3: Task Tracking | Decisions made | Beads chosen. Not yet installed. |
-| Phase 4: Autonomous Execution | Decisions made | OMC + Superpowers + safety layers. Nothing installed. |
-| Phase 5: Blocker Notification | Decisions made | OpenClaw (Docker). Not yet running. |
-| Phase 6: Scheduling | Decisions made | runCLAUDErun + Claude Squad + claude-auto-resume. Nothing installed. |
+| Component | Status | Details |
+|-----------|--------|---------|
+| Foundation | ✅ Complete | Bootstrap script, shared agents, CLAUDE.md cascade |
+| Phase 1: Spec It | CLI installed | OpenSpec global. Not initialized on any project. |
+| Phase 2: Task It | Not installed | Beads chosen. /pour to build. |
+| Phase 3: Build It | Not installed | OMC chosen. Superpowers deferred (test OMC first). |
+| Phase 4: Verify It | Not built | Per-project verify scripts needed. |
+| Phase 5: Learn It | Not built | /harvest slash command to build. |
+| Platform: Process | Not installed | Claude Squad chosen. |
+| Platform: Resilience | Not installed | claude-auto-resume chosen. |
+| Platform: Scheduling | Not installed | runCLAUDErun chosen. |
+| Platform: Notifications | Broken | OpenClaw needs Docker reinstall. |
+| Platform: Safety | Not installed | Destructive Command Guard + worktree isolation. |
 
 ## Configuration Propagation
 

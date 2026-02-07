@@ -13,5 +13,9 @@ plans/
 .claude/
 .mcp.json
 
+# Discovery script output (generated)
+research/.discovery-state.json
+research/candidates.md
+
 # OS files
 .DS_Store

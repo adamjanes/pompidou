@@ -2,25 +2,30 @@
 
 > What to evaluate, adopt, and build next.
 > Organized by urgency. Updated as decisions are made.
+> Phases reference the new Holy Grail: Spec It → Task It → Build It → Verify It → Learn It.
 
-## Immediate (Next Session)
+## Immediate (This Session / Today)
 
-| Priority | Tool | Action | Why | Catalogue |
-|----------|------|--------|-----|-----------|
-| HIGH | [Context7](https://github.com/upstash/context7) | Install plugin and test on frequency-first | 44.8K stars, 71.8K installs. Zero-config docs accuracy boost for Next.js, Supabase, Tailwind, Drizzle. Every project benefits. Lowest effort, highest value. | `catalogue/context/context7.md` |
-| HIGH | [claude-mem](https://github.com/thedotmack/claude-mem) | Monitor stability for 2-3 weeks, then test on frequency-first | 24.3K stars. Solves cross-session memory for Ralph loops. Heavy deps (SQLite + Chroma + Express). Too new to trust blindly --- wait for bug fixes. | `catalogue/memory/claude-mem.md` |
-| HIGH | [Ralph Playbook](https://github.com/ClaytonFarr/ralph-playbook) | Read thoroughly before implementing any Ralph loops | Required reading. 3-phase model (requirements, planning, implementation). Not a tool --- a reference. Prevents "just loop and hope" anti-pattern. | `catalogue/execution/ralph-playbook.md` |
-| HIGH | Beads | `brew install steveyegge/beads/bd` then `bd init` on frequency-first, linkedin, firstcomment | Task tracking is the missing link between specs and execution. Cannot run Phase 3 without Phase 2. | `catalogue/tasks/beads.md` |
+| Priority | Item | Phase | Action | Why |
+|----------|------|-------|--------|-----|
+| HIGH | Beads | Task It | `brew install steveyegge/beads/bd` then `bd init` on active projects | Cannot build without tasks. The missing link between specs and execution. |
+| HIGH | Oh-My-ClaudeCode | Build It | Install from marketplace. Test Autopilot mode. | Execution engine. Must be working before anything runs autonomously. |
+| HIGH | claude-auto-resume | Platform | Install. Test limit detection. | Every autonomous session needs this wrapper. |
+| HIGH | Claude Squad | Platform | `brew install claude-squad`. Create sessions for active projects. | Multi-project process management. Needed for parallel execution. |
+| HIGH | verify.sh | Verify It | Write per-project CI scripts (lint + types + test + build) | Gate between worktree branch and main. |
+| MEDIUM | [Context7](https://github.com/upstash/context7) | Supporting | Install plugin | Zero-config docs accuracy boost. Lowest effort, highest value. |
+| MEDIUM | [Ralph Playbook](https://github.com/ClaytonFarr/ralph-playbook) | Reference | Read before running loops | Prevents "just loop and hope" anti-pattern. |
 
 ## Short-Term (This Week)
 
-| Priority | Tool | Action | Why | Catalogue |
-|----------|------|--------|-----|-----------|
-| HIGH | Oh-My-ClaudeCode | Install from marketplace. Test Autopilot mode on frequency-first. | Execution engine for Ralph loops. Must be working before scheduling anything. | `catalogue/execution/oh-my-claudecode.md` |
-| HIGH | claude-auto-resume | Install. Test limit detection with a long-running session. | Foundational wrapper. Every autonomous session needs this. | `catalogue/scheduling/claude-auto-resume.md` |
-| MEDIUM | [Claude HUD](https://github.com/jarrodwatts/claude-hud) | Install plugin. Evaluate statusline during Ralph loop test. | Real-time context/agent monitoring. 3,079 stars, 14 contributors, 0 issues. Low risk. | `catalogue/notification/claude-hud.md` |
-| MEDIUM | [QMD](https://github.com/tobi/qmd) | Install. Point at knowledge/ folders across all projects. Measure token reduction. | 95% token reduction for markdown search. MCP server mode. Perfect for second-brain knowledge bases. By Tobi Lutke (Shopify CEO). | `catalogue/context/qmd.md` |
-| MEDIUM | [SafeClaw](https://github.com/ykdojo/safeclaw) | Docker setup test on Mac Mini. | Safe autonomous execution via containers. Enables --dangerously-skip-permissions without actual danger. | `catalogue/process/safeclaw.md` |
+| Priority | Item | Phase | Action | Why |
+|----------|------|-------|--------|-----|
+| HIGH | /pour command | Task It | Build slash command: OpenSpec tasks → Beads | Bridge between Spec It and Task It. |
+| HIGH | /harvest command | Learn It | Build slash command: session learnings → knowledge/updates/ | Feedback loop. Makes each session smarter than the last. |
+| HIGH | runCLAUDErun | Platform | Install on Mac Mini. Configure nightly schedule. | Scheduling layer for overnight runs. |
+| MEDIUM | Destructive Command Guard | Platform | Install Rust binary. | Safety net for --dangerously-skip-permissions. |
+| MEDIUM | [claude-mem](https://github.com/thedotmack/claude-mem) | Supporting | Monitor stability, then test | Cross-session memory. Heavy deps — wait for bug fixes. |
+| MEDIUM | [QMD](https://github.com/tobi/qmd) | Supporting | Install, point at knowledge/ folders | 95% token reduction for markdown search. |
 
 ## Medium-Term (This Month)
 
