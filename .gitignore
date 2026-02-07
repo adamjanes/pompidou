@@ -17,5 +17,16 @@ plans/
 research/.discovery-state.json
 research/candidates.md
 
+# Logs
+logs/
+*.log
+
+# Local automation scripts
+capture-logs.sh
+permission-watchdog.sh
+restart-challenge.sh
+36h-challenge-orchestrator.md
+WAVE1-STATUS.md
+
 # OS files
 .DS_Store
