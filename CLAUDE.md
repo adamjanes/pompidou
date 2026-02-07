@@ -82,11 +82,11 @@ pompidou/
 | Phase | Status | Key Tool |
 |-------|--------|----------|
 | Phase 1: Foundation | ✅ Complete | Bootstrap script, shared agents |
-| Phase 2: Spec-Driven Dev | ✅ Complete | OpenSpec on frequency-first |
-| Phase 3: Task Tracking | Pending | Beads |
-| Phase 4: Autonomous Execution | Pending | Oh-My-ClaudeCode |
-| Phase 5: Blocker Notification | Pending | OpenClaw (Docker) |
-| Phase 6: Scheduling | Pending | runCLAUDErun |
+| Phase 2: Spec-Driven Dev | Decisions made | OpenSpec CLI installed. Not yet initialized on any project. |
+| Phase 3: Task Tracking | Decisions made | Beads chosen. Not yet installed. |
+| Phase 4: Autonomous Execution | Decisions made | OMC + Superpowers + safety layers. Nothing installed. |
+| Phase 5: Blocker Notification | Decisions made | OpenClaw (Docker). Not yet running. |
+| Phase 6: Scheduling | Decisions made | runCLAUDErun + Claude Squad + claude-auto-resume. Nothing installed. |
 
 ## Configuration Propagation
 
