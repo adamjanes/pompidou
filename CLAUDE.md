@@ -50,6 +50,7 @@ pompidou/
 │
 ├── stack/                       # The output — recommended tech stack
 │   ├── how-it-works.md          # ★ START HERE — full system narrative
+│   ├── omc-usage-guide.md       # Phase 3: How to use OMC (3 commands only)
 │   ├── current.md               # Quick-reference tables (tool → phase)
 │   ├── decisions.md             # Decision log with dates & rationale
 │   └── roadmap.md               # What to evaluate next
@@ -68,6 +69,7 @@ pompidou/
 | What | Where |
 |------|-------|
 | **Understand the system** | `stack/how-it-works.md` ★ Start here |
+| **Use OMC (Phase 3)** | `stack/omc-usage-guide.md` — 3 commands, gotchas, launch instructions |
 | **Find a tool** | `catalogue/_index.md` |
 | **Current stack (tables)** | `stack/current.md` |
 | **Why we chose X** | `stack/decisions.md` |

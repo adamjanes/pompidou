@@ -24,10 +24,10 @@
 
 | Role | Tool | Score | Status | Install | Notes |
 |------|------|-------|--------|---------|-------|
-| Multi-agent execution engine | [Oh-My-ClaudeCode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 4.20 | CHOSEN | Marketplace plugin | **Installation method:** `claude`, then `/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode` + `/plugin install oh-my-claudecode` + `/oh-my-claudecode:omc-setup`. See [omc-installation-guide.md](omc-installation-guide.md). 7 execution modes (autopilot, ultrawork, ralph, ultrapilot, ecomode, swarm, pipeline) + 32 agents + intelligent model routing. |
-| Within-session parallelism | Native Agent Teams | 4.00 | CHOSEN | `export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` | Already enabled in ~/.zshrc. |
-| Methodology (deferred) | [Superpowers](https://github.com/obra/superpowers) | 3.85 | Deferred | Marketplace plugin | Install OMC first. Only add if OMC's agents aren't sufficient. Test for conflicts with OMC's auto-triggering. |
-| TDD quality gate (if needed) | [TDD Guard](https://github.com/nicepkg/tdd-guard) | 3.65 | Deferred | Hooks install | May be redundant with OMC's tdd-guide agent. Evaluate after OMC is live. |
+| Execution wrapper (interim) | [Oh-My-ClaudeCode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 3.48 | CHOSEN (thin wrapper) | Marketplace plugin | **Thin layer only** — use autopilot/ralph/ultrapilot as execution wrappers. Don't invest in full OMC abstraction set. Score revised from 4.20 after independent verification (Decision #21). |
+| Multi-agent execution (long-term) | Native Agent Teams | 4.00 | CHOSEN (primary) | `export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` | Already enabled in ~/.zshrc. **Migration trigger:** when Agent Teams ships model routing. Monitoring actively. |
+| Methodology (deferred) | [Superpowers](https://github.com/obra/superpowers) | 3.85 | Deferred | Marketplace plugin | 47.6K stars, massive community. Evaluate independently of OMC — complementary to Agent Teams too. |
+| TDD quality gate (if needed) | [TDD Guard](https://github.com/nicepkg/tdd-guard) | 3.65 | Deferred | Hooks install | Evaluate after execution engine stabilizes. |
 
 ### Phase 4: Verify It
 
@@ -111,11 +111,11 @@
 |------|-------|
 | OpenSpec CLI (v1.1.1) | Global (`openspec` in PATH) |
 | Agent Teams env var | ~/.zshrc |
+| Oh-My-ClaudeCode | `~/.claude/plugins/marketplaces/omc/` — see [omc-usage-guide.md](omc-usage-guide.md) |
 
 ### Not Yet Installed
 | Tool | Next Step |
 |------|-----------|
-| Oh-My-ClaudeCode | Open Claude Code and follow [omc-installation-guide.md](omc-installation-guide.md) |
 | Beads | `brew install steveyegge/beads/bd` then `bd init` on active projects |
 | claude-auto-resume | `curl -fsSL .../install.sh \| bash` |
 | Claude Squad | `brew install claude-squad` |

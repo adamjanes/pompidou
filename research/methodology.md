@@ -29,6 +29,24 @@ Every tool is evaluated against how well it supports Adam's autonomous developme
 | Cost efficiency | 10% | Token usage, API costs, infrastructure requirements |
 | Maturity | 10% | Stable API, good docs, not likely to break |
 
+### Community Trust — Mandatory Verification Checklist (added 2026-02-09)
+
+**Before scoring Community Trust above 2/5, you MUST verify:**
+
+| Check | How to verify | Red flag if... |
+|-------|---------------|----------------|
+| Stars-to-watchers ratio | `gh api repos/OWNER/REPO` — compare `stargazers_count` to `subscribers_count` | Ratio > 100:1 (stars are bookmarks, not users) |
+| Contributor diversity | `gh api repos/OWNER/REPO/contributors` — count people with >5 commits | <3 real contributors = bus factor risk |
+| External PR acceptance | `gh api repos/OWNER/REPO/pulls?state=closed` — count merged PRs from non-authors | <5 merged external PRs = closed project |
+| Reddit presence | Search `"tool-name" site:reddit.com` | Zero results for a 1K+ star project |
+| Hacker News presence | Search `"tool-name" site:news.ycombinator.com` | Zero results for a 1K+ star project |
+| YouTube/tutorial content | Search `"tool-name" tutorial` or `"tool-name" review` | Zero independent content |
+| Independent blog posts | Search `"tool-name" review` or `"I tried tool-name"` | Only author-created content |
+| Project age | Check repo creation date | <90 days old = too early to trust star count |
+| Issue reporter diversity | Count unique non-author issue reporters | <20 unique reporters for 1K+ stars |
+
+**Lesson learned (OMC evaluation, 2026-02-07):** The original evaluation scored Community Trust 3/5 based on README claims and GitHub vanity metrics. Independent verification revealed zero Reddit/HN/YouTube presence, one-person project (97% contributions), and only 2 merged external PRs. Actual score: 1.5/5. Star count alone is NOT community trust.
+
 ### Red Flags (Immediate Rejection)
 - Fabricated benchmarks or unverifiable claims
 - Requires competing model ecosystem (e.g., Kimi, OpenAI-only)

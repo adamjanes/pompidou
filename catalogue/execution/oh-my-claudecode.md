@@ -3,10 +3,12 @@
 | Field | Value |
 |-------|-------|
 | GitHub | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) |
-| Stars | 4,844 |
-| Last Commit | 2026-02 (active) |
+| Stars | 5,423 |
+| Age | 30 days (created 2026-01-09) |
+| Last Commit | 2026-02-08 (active) |
+| Contributors | 19 (97% from one person) |
 | Install | Claude Code marketplace plugin |
-| Status | ★ CHOSEN |
+| Status | ★ CHOSEN (thin wrapper — see Decision #21) |
 | Category | execution |
 | Holy Grail Phase | 3-Run |
 
@@ -47,17 +49,19 @@ omc cost weekly                         # Weekly cost report
 
 ## Evaluation
 
-### Scores
+### Scores (revised 2026-02-09 after independent verification)
 
-| Criterion | Weight | Score | Weighted |
-|-----------|--------|-------|----------|
-| Holy Grail alignment | 30% | 5 | 1.50 |
-| Simplicity | 20% | 4 | 0.80 |
-| Community trust | 15% | 3 | 0.45 |
-| Ecosystem fit | 15% | 5 | 0.75 |
-| Cost efficiency | 10% | 4 | 0.40 |
-| Maturity | 10% | 3 | 0.30 |
-| **Composite** | | | **4.20** |
+| Criterion | Weight | Score | Weighted | Notes |
+|-----------|--------|-------|----------|-------|
+| Holy Grail alignment | 30% | 5 | 1.50 | Still best-in-class for Phase 3 |
+| Simplicity | 20% | 3 | 0.60 | Agent symlink needed, permission issues, mode confusion |
+| Community trust | 15% | 1.5 | 0.225 | One person, zero Reddit/HN/YouTube, no tutorials |
+| Ecosystem fit | 15% | 4 | 0.60 | Works but fragile (one maintainer = bus factor 1) |
+| Cost efficiency | 10% | 4 | 0.40 | Ecomode is genuinely useful |
+| Maturity | 10% | 1.5 | 0.15 | 30 days old, 20 releases, version churn |
+| **Composite** | | | **3.48** | Down from 4.20 — see Independent Verification below |
+
+Previous score: **4.20** (2026-02-07, before verification)
 
 ### Strengths
 - Zero configuration — install as marketplace plugin, immediately available
@@ -70,34 +74,56 @@ omc cost weekly                         # Weekly cost report
 - Ecomode is genuinely useful for token-constrained environments
 
 ### Weaknesses
-- Marketplace plugin distribution means version management is less explicit than npm/brew
-- 32 agents and 5 modes is a lot of surface area — unclear how much is actually used in practice
+- **Bus factor of 1** — 97% of contributions from one developer (Yeachan-Heo). Only 2 external PRs merged out of 307 total.
+- **No community presence** — Zero Reddit threads, zero HN discussions, zero YouTube tutorials, zero independent blog posts. Unusual for 5.4K stars.
+- **No learning resources** — Only author-created docs exist. No community tutorials, videos, or guides.
+- **30 days old** with 20 releases — hyperactive development suggests instability and breaking changes.
+- **Stars-to-engagement mismatch** — 5,423 stars but only 27 watchers and ~50-60 unique issue reporters. Likely a single viral launch event.
+- 32 agents and 7 modes is a lot of surface area — unclear how much is actually used in practice
 - Token usage in Ultrapilot/Swarm modes can be substantial (3-5x parallel = 3-5x cost)
-- Documentation is thorough but spread across multiple docs/ files
 - No built-in task tracking — needs Beads or similar for persistent state
-- v4.0 (modular architecture) not yet released — current version may change significantly
+- Permission hooks don't cover all tools (Read, Edit, Write, Glob not auto-approved)
+- Agent symlink required but not documented in install guide
 
-### Community Sentiment
+### Community Sentiment (revised 2026-02-09)
 
-Growing positive reception. The GitHub repo is actively maintained with frequent releases and detailed changelogs. The five-mode approach gets praise for flexibility — developers appreciate choosing between speed (Ultrapilot) and cost (Ecomode) based on the task. The 32-agent roster draws comparisons to BMAD Method's agent approach. Some skepticism about whether all 32 agents are meaningfully differentiated or if it's feature bloat. The real-time HUD and cost monitoring are consistently highlighted as standout features. Token usage concerns are the primary criticism, especially for Ultrapilot mode on Max plans with usage limits.
+**Verified reality:** Essentially no independent community discussion exists. Zero Reddit threads, zero Hacker News posts, zero YouTube tutorials, zero independent blog posts. One inaccessible Medium article (Joe Njenga, Jan 2026) is the only potential independent content found. The 5,423 stars likely came from a single viral event (possibly Korean dev community), not sustained organic adoption. The ~50-60 unique GitHub issue reporters represent the real user base. Issues are genuine (real problems from real users) and the author is responsive (98.9% closure rate), but this is a **niche tool with a small user base**, not a widely-adopted community project.
+
+**Previous assessment (2026-02-07, now retracted):** ~~Growing positive reception... five-mode approach gets praise... HUD and cost monitoring consistently highlighted.~~ This was inferred from README claims, not verified against independent sources.
 
 ### Compared To
 
-- **Ralph Plugin** (`catalogue/execution/ralph-plugin.md`): Ralph is a simpler loop (while true → prompt → execute). OMC adds modes, agents, model routing, and monitoring. OMC is more feature-rich; Ralph is more predictable.
-- **ralph-claude-code** (`catalogue/execution/ralph-claude-code.md`): Frank Bria's implementation adds circuit breakers and exit detection to the Ralph loop. OMC goes further with full multi-agent orchestration. Different level of complexity.
-- **ralph-orchestrator** (`catalogue/execution/ralph-orchestrator.md`): Similar philosophy (multi-agent, hat system) but in Rust with 7 backends. OMC is Claude Code-specific and simpler to set up.
+- **Native Agent Teams** (built-in): Anthropic's own multi-agent feature. Experimental (Feb 5, 2026). Less flexible today but zero abandonment risk and will improve. Long-term replacement for OMC.
+- **Superpowers** (47.6K stars): Methodology framework, not execution engine. Complementary, not competitive. Has massive community and independent tutorials.
+- **Ralph TUI** (1.7K stars): Loop orchestrator with **working** Beads integration. Doesn't do parallel execution but handles Phase 2→3 bridge better than OMC.
+- **Ralph Plugin** (`catalogue/execution/ralph-plugin.md`): Simpler loop. OMC is more feature-rich; Ralph is more predictable.
+- **ralph-claude-code** (`catalogue/execution/ralph-claude-code.md`): Circuit breakers + exit detection. OMC goes further with full multi-agent orchestration.
+
+### Independent Verification (2026-02-09)
+
+Full research report: `knowledge/updates/2026-02-09-omc-independent-verification.md`
+
+**Methodology:** GitHub API analysis (contributors, issues, PRs, stargazers, forks, releases), web search across Reddit, HN, YouTube, Twitter, blogs, Discord. Three parallel research agents.
+
+**Key findings:**
+1. **One-person project** — 97% of 702 contributions from Yeachan-Heo. Only 2 external PRs merged.
+2. **Stars are real but misleading** — Sampled stargazers are real developers, but 5,423 stars with 27 watchers suggests a single viral event, not sustained adoption.
+3. **Zero external presence** — No Reddit, HN, YouTube, Twitter, or independent blog content found.
+4. **Real but small user base** — ~50-60 unique issue reporters. Issues are genuine.
+5. **Project is 30 days old** — Created Jan 9, 2026. 20 releases in 30 days.
+6. **Inspired by oh-my-opencode** (29.5K stars) — The original has a visible community and Discord. OMC borrowed the concept but not the community.
+
+**Verdict:** Real tool, works as claimed, but drastically overrated by vanity metrics. Keep using (no better alternative today) but design system to be OMC-independent.
 
 ## Our Usage
 
-**Chosen for zero-config multi-agent execution.** OMC's five modes map directly to our needs:
-- **Autopilot** for standard Ralph loops on personal projects
-- **Ultrapilot** for large features that benefit from parallelism
-- **Ecomode** for budget-conscious maintenance tasks
-- **Pipeline** for build → test → deploy sequences
+**Thin execution wrapper only (Decision #21, 2026-02-09).** OMC is used as a disposable Phase 3 layer, not load-bearing architecture. We use two features:
+- **Autopilot / Ralph** for persistent autonomous execution
+- **Ultrapilot** for parallel execution on large features
 
-The intelligent model routing aligns with our orchestrator pattern (Haiku for grunt work, Sonnet for standard, Opus for complex). Built-in cost monitoring via `omc stats` and `omc cost` helps track API spend across all project loops.
+We do NOT invest in learning OMC's full abstraction set (32 agents, 7 modes, skill system, HUD, cost monitoring). When Native Agent Teams gains model routing, we migrate off OMC.
 
-**Configuration:** Install via Claude Code marketplace. No additional config needed. Per-project settings can be added to `.claude/` as OMC evolves.
+**Migration trigger:** Native Agent Teams ships cost-aware model routing (Haiku/Sonnet/Opus selection per task).
 
 ## Sources
 
@@ -108,4 +134,5 @@ The intelligent model routing aligns with our orchestrator pattern (Haiku for gr
 - [Releases](https://github.com/Yeachan-Heo/oh-my-claudecode/releases)
 
 ---
-*Last reviewed: 2026-02-07*
+*Last reviewed: 2026-02-09 (independent verification)*
+*Previous review: 2026-02-07 (initial evaluation)*

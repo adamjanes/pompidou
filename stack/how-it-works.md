@@ -93,65 +93,68 @@ These five phases are the **development work**. The infrastructure that keeps th
 
 ---
 
-## Phase 3: Build It — Oh-My-ClaudeCode
+## Phase 3: Build It — Native Agent Teams + OMC (thin wrapper)
 
-**What it is:** A plugin for Claude Code that turns it into a multi-agent development team. It adds execution modes, specialized agent personas, automatic model selection, and cost monitoring.
+> **Strategy (Decision #21, 2026-02-09):** Native Agent Teams is the long-term execution engine. OMC is a thin, disposable wrapper used only for features Agent Teams doesn't have yet (persistence loops, model routing). Don't invest in learning OMC's full abstraction set. When Agent Teams ships model routing, migrate off OMC entirely.
 
-**How it works in practice:**
+### Native Agent Teams — "The long-term engine"
 
-OMC gives you **five ways to run Claude Code**:
-
-| Mode | What it does | When to use it |
-|------|-------------|----------------|
-| **Autopilot** | One agent works through tasks continuously, looping until everything's done | Standard overnight runs. This is the default workhorse mode. |
-| **Ultrapilot** | Spins up 3-5 agents working in parallel | Large features that touch many files. 3-5x faster but 3-5x the cost. |
-| **Swarm** | Coordinated agent team with specialization | Complex projects where you want an architect, coder, tester, and reviewer working together. |
-| **Pipeline** | Sequential steps: build → test → deploy | CI/CD-style workflows where each step must complete before the next starts. |
-| **Ecomode** | Routes everything to the cheapest capable model | Small tasks, refactoring, documentation. Saves money. |
-
-**The 32 agents:** OMC comes with pre-defined agent personas — architect, coder, tester, reviewer, security-reviewer, debugger, documenter, build-fixer, tdd-guide, and more. Each has a personality, skill set, and conditions that trigger it. For example, if the agent encounters a test failure, the tdd-guide persona activates. If it's doing a security-sensitive change, the security-reviewer kicks in.
-
-**Model routing:** OMC automatically picks the right AI model for each task:
-- **Haiku** (cheapest, fastest) for simple stuff — formatting, small edits, boilerplate
-- **Sonnet** (mid-tier) for standard development work
-- **Opus** (most capable, most expensive) for complex reasoning, architecture decisions, debugging hard problems
-
-**Cost monitoring:**
-```bash
-omc stats          # Token usage, cost, session duration
-omc cost daily     # What did today's runs cost?
-omc cost weekly    # Weekly spending breakdown
-```
-
-**Real-time HUD:** A statusline in your terminal shows: current mode, active agent, token count, and progress.
-
-### What about Superpowers?
-
-Superpowers (46K stars, by obra) is a methodology framework that enforces brainstorm → plan → TDD → review. It's complementary to OMC in theory — OMC handles *how to run*, Superpowers handles *how to develop*.
-
-**The risk:** Both tools auto-trigger agent behaviors and inject instructions into Claude Code's context. OMC has a tester agent AND Superpowers has a TDD skill. OMC has a code-reviewer agent AND Superpowers has a review skill. Running both could cause conflicts where the agent gets two contradictory sets of instructions.
-
-**Our approach:** Install OMC alone first. Test whether its 32 built-in agents provide enough development discipline (planning, testing, review). If yes, Superpowers is unnecessary. If OMC's agents feel shallow, layer Superpowers on top carefully — but only after hands-on testing confirms they don't conflict.
-
-**Status:** OMC not yet installed. Superpowers deferred until OMC is tested.
-
-### Native Agent Teams — "Parallelism within a session"
-
-**What it is:** A built-in Claude Code feature that lets one "Team Lead" agent coordinate multiple "teammate" agents within a single session. Each teammate gets its own 1M token context and its own git worktree.
+**What it is:** Anthropic's built-in multi-agent feature. A Team Lead coordinates multiple Teammates, each with their own 1M token context and git worktree, working in parallel on a shared task DAG.
 
 **How it works:**
-- Enabled via: `export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`
-- The Team Lead decomposes a complex task into a DAG (dependency graph) of subtasks
-- Teammates pick up tasks and work in parallel, each in their own git branch
-- **Delegate mode** (Shift+Tab): locks the Team Lead to coordination only
+- Enabled via: `export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` (already in ~/.zshrc)
+- Team Lead decomposes work into a task DAG with dependencies
+- Teammates pick up tasks when prerequisites are met, work in parallel
+- Peer-to-peer messaging between teammates (not just hub-and-spoke)
+- Git worktree isolation prevents merge conflicts
+- **Delegate mode** (Shift+Tab): locks Lead to coordination only — matches our orchestrator pattern
+- View task list: Ctrl+T
 
-**When to use it vs. Claude Squad:**
+**What it does well today:**
+- Parallel execution across files/concerns
+- DAG-based task scheduling with dependency tracking
+- Research and review with competing hypotheses
+- Cross-layer coordination (frontend/backend/tests each owned by a teammate)
+
+**What it can't do yet (and why we still need OMC wrappers):**
+- No model routing (can't send simple tasks to Haiku, complex to Opus)
+- No persistence through rate limits (session ends = state lost)
+- No "don't stop until done" enforcement (no ralph-style loops)
+- No built-in cost monitoring
+
+**When to use Agent Teams vs. Claude Squad:**
 - **Agent Teams** = multiple agents inside ONE session, working on ONE project collaboratively
 - **Claude Squad** = multiple SEPARATE sessions, each working on a DIFFERENT project independently
 
 **Cost note:** Each teammate loads full context (~1M tokens). A team of 5 uses ~5-7x the tokens. Use for big tasks, not routine work.
 
-**Status:** Already enabled in ~/.zshrc.
+**Status:** Already enabled in ~/.zshrc. Experimental but functional.
+
+### OMC — "Thin execution wrappers until Agent Teams matures"
+
+**What we use from OMC (and nothing more):**
+
+| Wrapper | What it does | When Agent Teams replaces it |
+|---------|-------------|------------------------------|
+| **Autopilot** | Persistent single-agent loop | When Agent Teams gets session resumption |
+| **Ralph** | "Don't stop until architect verifies" loop | When Agent Teams gets completion enforcement |
+| **Ultrapilot** | 3-5x parallel execution | Agent Teams already does this — use Agent Teams instead when stable |
+
+**What we deliberately ignore from OMC:**
+- 32 agent personas (CLAUDE.md + Task tool subagent_type already handles this)
+- 7 execution modes (we use 2-3 max)
+- Skill system, HUD, cost monitoring CLI
+- Swarm, Pipeline, Ecomode modes
+
+**Migration trigger:** Native Agent Teams ships cost-aware model routing (Haiku/Sonnet/Opus selection per task). When that happens, OMC is dropped with zero regret.
+
+### What about Superpowers?
+
+Superpowers (47.6K stars, by obra) is a methodology framework that enforces brainstorm → plan → TDD → review. It's complementary to *any* execution engine — Agent Teams or OMC.
+
+**Our approach:** Evaluate Superpowers independently. It's a methodology layer, not an execution engine. Can sit on top of Agent Teams just as easily as on top of OMC. Deferred until execution engine is stable.
+
+**Status:** Deferred.
 
 ---
 
