@@ -91,11 +91,12 @@ pompidou/
 | Component | Status | Details |
 |-----------|--------|---------|
 | Foundation | ✅ Complete | Bootstrap script, shared agents, CLAUDE.md cascade |
-| Phase 1: Spec It | CLI installed | OpenSpec global. Not initialized on any project. |
-| Phase 2: Task It | Not installed | Beads chosen. /pour to build. |
-| Phase 3: Build It | Not installed | OMC chosen. Superpowers deferred (test OMC first). |
+| Phase 1: Spec It | ✅ Active | OpenSpec installed, used on 6 projects (frequency-first, firstcomment, pompidou-site, 16insecurities, kangaroo-hook, content-studio) |
+| Phase 2: Task It | ✅ Installed | Beads (`bd` v0.49.0) via Homebrew. Needs `bd init` per project. |
+| Phase 3: Build It | ✅ Installed | OMC v4.0.10 — CLI for analytics (`omc stats`), Skills for execution (`/oh-my-claudecode:autopilot`). 40+ skills, hooks for keyword detection & agent delegation. |
 | Phase 4: Verify It | Not built | Per-project verify scripts needed. |
 | Phase 5: Learn It | Not built | /harvest slash command to build. |
+| Brain (Obsidian) | ✅ Active | 411+ notes, wiki-links, Dataview dashboards. Slash commands: `/brain-search`, `/brain-add`. |
 | Platform: Process | Not installed | Claude Squad chosen. |
 | Platform: Resilience | Not installed | claude-auto-resume chosen. |
 | Platform: Scheduling | Not installed | runCLAUDErun chosen. |

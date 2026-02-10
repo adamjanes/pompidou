@@ -46,12 +46,12 @@
 
 | Role | Tool | Score | Status | Install | Notes |
 |------|------|-------|--------|---------|-------|
-| Process management | [Claude Squad](https://github.com/smtg-ai/claude-squad) | 4.75 | CHOSEN | `brew install claude-squad` | TUI. Git worktree isolation. Not yet installed. |
+| Process management | tmux (direct) | — | ACTIVE | `brew install tmux` (pre-installed on macOS) | Dreams of Code config. Replaced Claude Squad — worktree isolation unnecessary for multi-repo setup. See [shared/skills/tmux-parallel-sessions.md](../../../shared/skills/tmux-parallel-sessions.md). Decision #22. |
 | Resilience | [claude-auto-resume](https://github.com/terryso/claude-auto-resume) | 4.65 | CHOSEN | `curl -fsSL .../install.sh \| bash` | Wraps every session. Not yet installed. |
 | Scheduling | [runCLAUDErun](https://runclauderun.com/) | 4.05 | CHOSEN | macOS app download | Nightly scheduling. Not yet installed. |
 | Blocker notification | [OpenClaw](https://github.com/nicepkg/openclaw) | 3.55 | CHOSEN (isolated) | Docker only | Read-only blocker file + Telegram. Currently broken. |
 | Safety: commands | [Destructive Command Guard](https://github.com/kenryu42/claude-code-safety-net) | 3.55 | Planned | Rust binary | Catches rm -rf, git push --force. |
-| Safety: isolation | Git worktrees (Claude Squad) | — | Built-in | — | Every session on its own branch. |
+| Safety: isolation | Git worktrees (manual) | — | Available | `git worktree add` | For parallel Claude work on same repo. Not needed for separate projects. |
 
 ## Architecture
 
@@ -76,7 +76,7 @@
 │  THE PLATFORM (keeps the cycle running)             │
 │                                                     │
 │  Scheduling:    runCLAUDErun (nightly triggers)     │
-│  Process:       Claude Squad (multi-session TUI)    │
+│  Process:       tmux (parallel sessions)             │
 │  Resilience:    claude-auto-resume (limit handling) │
 │  Notification:  OpenClaw [Docker] (Telegram alerts) │
 │  Safety:        Worktree isolation + Cmd Guard      │
@@ -118,7 +118,7 @@
 |------|-----------|
 | Beads | `brew install steveyegge/beads/bd` then `bd init` on active projects |
 | claude-auto-resume | `curl -fsSL .../install.sh \| bash` |
-| Claude Squad | `brew install claude-squad` |
+| Claude Squad | Superseded by tmux (Decision #22). Revisit only if worktree isolation needed. |
 | runCLAUDErun | Download macOS app |
 | Destructive Command Guard | Install Rust binary |
 | OpenClaw | Clean reinstall + Docker containerization |
